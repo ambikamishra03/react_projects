@@ -7,6 +7,16 @@
     margin: 20px;
     padding: 0;
   }
+  .moves{
+    color:white;
+    font-size:18px;
+      margin:8px;
+      width:220px;
+      border-color:none;
+      outline:none;
+      background-color:gray;
+      border-radius:22px;
+  }
   
   code {
     font-size: 1.2em;
