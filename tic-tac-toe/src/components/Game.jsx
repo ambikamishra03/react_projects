@@ -33,8 +33,8 @@ export default function Game() {
         return (
           <li key={move}>
             <button onClick={() => jumpTo(move)} style={{color:'white',fontSize:'20px',
-            margin:'6px',width:'220px',outline:'none',backgroundColor:'gray',
-            borderRadius:'28px'}}>{description}</button>
+            margin:'6px',width:'220px',borderColor:'none',outline:'none',backgroundColor:'gray',
+            borderRadius:'22px'}}>{description}</button>
           </li>
         );
       });
