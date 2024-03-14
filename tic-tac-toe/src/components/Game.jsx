@@ -32,7 +32,9 @@ export default function Game() {
         }
         return (
           <li key={move}>
-            <button onClick={() => jumpTo(move)}>{description}</button>
+            <button onClick={() => jumpTo(move)} style={{color:'white',fontSize:'20px',
+            margin:'6px',width:'220px',outline:'none',backgroundColor:'gray',
+            borderRadius:'28px'}}>{description}</button>
           </li>
         );
       });
@@ -42,7 +44,7 @@ export default function Game() {
          <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
         </div>
         <div className="game-info">
-          <ol>{moves}</ol>
+          <ol style={{color:'white',fontSize:'22px',margin:'10px'}}>{moves}</ol>
         </div>
       </div>
     );
