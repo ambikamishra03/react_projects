@@ -6,6 +6,7 @@ import RespondingToEvents from './Components/RespondingToEvents';
 import RenderingList from './Components/RenderingList';
 import { useState } from 'react';
 import SharingDataInComponents from './Components/SharingDataInComponents'
+import Components from './Components/Practice';
 
 function App() {
   const [count,setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <div style={{margin:'10px',padding:'10px'}}>
+      <Components/>
           <LearnJsx/>
           <ConditionalRendering/>
           <RenderingList/>
