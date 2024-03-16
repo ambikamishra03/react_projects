@@ -13,7 +13,7 @@ const RenderingList = () => {
         price:'150'
     }, 
     {
-        id:1,
+        id:3,
         title:'book',
         price:'400'
     }
@@ -22,10 +22,20 @@ const RenderingList = () => {
     const listItems = products.map((product) => (
     <li key={product.id}>The product is {product.title} and its price is {product.price}.</li>
     ))
+    const itemFilter = products.filter((product) => (
+      product.price>200
+      )).map((product) =>(
+        <li key={product.id}>The {product.title} is costly and its price is ({product.price}), greater than 200.</li>
+      ))
+
+
   return (
     <div>
-    <h2>List of products</h2>
+    <h2>List of products,map</h2>
       <ul>{listItems}</ul>
+      <br />
+     <h2>List of products,filter</h2>
+      <ul>{itemFilter}</ul>
     </div>
   )
 }

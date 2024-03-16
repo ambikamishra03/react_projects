@@ -17,15 +17,15 @@ function App() {
   return (
     <>
       <div style={{margin:'10px',padding:'10px'}}>
-      <Components/>
+      <Components/> 
           <LearnJsx/>
           <ConditionalRendering/>
           <RenderingList/>
           <RespondingToEvents/>
           <UpdateScreenByStates/>
-           <UpdateScreenByStates/>  {/*here the counts of each button increases independently  */}
+           <UpdateScreenByStates/>    {/* here the counts of each button increases independently  */}
            
-           <SharingDataInComponents count={count} onClick={handleClick}/>
+         <SharingDataInComponents count={count} onClick={handleClick}/>
            <SharingDataInComponents count={count} onClick={handleClick}/>
       </div>
     </>

@@ -1,0 +1,14 @@
+.jsxwrapper {
+    width:300px;
+    height:100px;
+    margin-top:20px;
+    display:flex;
+    padding:20px;
+    background-color:gray;
+    align-items:center;
+    justify-content:center
+}
+.images {
+        padding:15px;
+        border-radius:24px;
+}
